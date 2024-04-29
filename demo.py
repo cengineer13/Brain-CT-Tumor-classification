@@ -1,4 +1,7 @@
-import torch, timm, argparse, pickle
+import torch
+import timm
+import argparse
+import pickle
 from PIL import Image
 from torchvision import transforms as T
 import streamlit as st

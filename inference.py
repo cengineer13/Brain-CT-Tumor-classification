@@ -20,7 +20,7 @@ def inference(model, test_dataloader, device):
             all_gts.append(gt.item())
             all_preds.append(pred.item())
 
-    print(f"{len(test_dataloader.dataset)} rasm test qilinganda {(correct * 100)/len(test_dataloader.dataset):.2f} % foiz aniqlikda topdi")
+    print(f"{len(test_dataloader.dataset)} image tested with our model and achieved {(correct * 100)/len(test_dataloader.dataset):.2f} % accuracy ")
 
     return all_imgs, all_gts, all_preds
 

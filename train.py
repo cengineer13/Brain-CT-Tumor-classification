@@ -28,7 +28,7 @@ def training(model, epoch, train_dataloader, criterion, optimizer, device):
         loss.backward()
         optimizer.step()
         
-    epoch_loss = np.mean(loss_per_batch) #1 ta epochdagi (400) ta batchni ichidagi loss larini qoshib mean oladi 
+    epoch_loss = np.mean(loss_per_batch) 
     average_acc = total_acc / len(train_dataloader.dataset)
  
     print(f"Epoch - {epoch+1} ||||| Loss: {epoch_loss:.3f} |||| Accuracy: {average_acc:.3f}")
@@ -59,7 +59,7 @@ def validationing(model, epoch, valid_dataloader, criterion, device):
             loss = criterion(prediction, labels)
             loss_per_batch.append(loss.item()) #Add each batch loss to one list 
         
-        epoch_loss = np.mean(loss_per_batch)  #1 ta epochdagi barcha batchni loss larini qoshib mean oladi 
+        epoch_loss = np.mean(loss_per_batch) 
         average_acc = total_acc / len(valid_dataloader.dataset)
         
         print(f"Epoch - {epoch+1} ||||| Loss: {epoch_loss:.3f} |||| Accuracy: {average_acc:.3f}")

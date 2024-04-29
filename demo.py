@@ -2,6 +2,7 @@ import torch, timm, argparse, pickle
 from PIL import Image
 from torchvision import transforms as T
 import streamlit as st
+import os
 
 def run(args): 
 
@@ -58,7 +59,8 @@ if __name__ == "__main__":
     parser.add_argument("-mf", "--model_files", type=str, default="data/model_files", help="Path for trained and saved files")
     parser.add_argument("-dn", "--dataset_name", type=str, default="brain", help="Dataset name")
     parser.add_argument("-mn", "--model_name", type=str, default="resnet18", help="Pretrained model name of Timm library")
-    parser.add_argument("-ti", "--test_img", default="test_images/Very Low.jpg", help="Path for image to predict unseen image")
+    parser.add_argument("-ims", "--img_size", type=tuple, default=(224,224), help="To be resized size for image")
+    parser.add_argument("-ti", "--test_img", default="data/test_images/cancer2.jpg", help="Path for image to predict unseen image")
 
     args = parser.parse_args()
 

@@ -152,4 +152,4 @@ This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) fo
 
 Mr Murodil  - murodild@gmail.com
 LinkedIn - https://www.linkedin.com/in/mr-murodil
-Project Link: [https://github.com/yourusername/brain-ct-classification](https://github.com/yourusername/brain-ct-classification)
+Project Link: [https://github.com/yourusername/brain-ct-classification](https://github.com/cengineer13/brain-ct-classification)

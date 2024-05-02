@@ -75,6 +75,14 @@ The model's training and validation metrics are visualized below:
 ![Training and Validation Accuracy](data/plots/2-Training%20and%20Validation%20accuracy%20metrics.png)
 ![Training and Validation Loss](data/plots/2-Training%20and%20Validation%20loss%20metrics.png)
 
+### Accuracy Graph Analysis:
+Training Accuracy quickly rises to nearly 100% by the second epoch, indicating that the model fits the training data very well.
+Validation Accuracy starts high around 95% and remains relatively stable, slightly increasing and then plateauing. This shows good generalization but also suggests possible overfitting as it doesn’t reach the training accuracy.
+### Loss Graph Analysis:
+Training Loss drops sharply initially, from around 0.65 to near 0.05 by the second epoch, showing that the model quickly reduces error on the training data.
+Validation Loss decreases more gradually, leveling off around the same low value as the training loss by the fifth epoch, which suggests that the model’s predictions on the validation set are becoming stable.
+### Summary:
+The model learns effectively, as shown by rapid improvements in training metrics. However, the gap between training and validation accuracy suggests some overfitting. Both loss curves converging at a low value by the end indicate good model stability and generalization at the end of training. Further measures might be considered to narrow the gap between training and validation accuracy to ensure the model generalizes well to new data.
 The curves represent the model's accuracy and loss over epochs, indicating the learning process and convergence.
 
 ## Inference
